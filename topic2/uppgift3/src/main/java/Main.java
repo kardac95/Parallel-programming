@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Main {
     public static void main(String [ ] args) {
         int iterations[] = {10, 20, 40, 80, 160, 320};
@@ -21,7 +19,7 @@ public class Main {
             System.out.print(p + "\t");
             for (int n: iterations) {
                 double ts = calcTS(n); double tp = calcTP(n,p);
-                System.out.print("& " + calcSpeedup(ts,tp) + "\t");
+                System.out.print("& " + calcEfficiency(ts,tp, n) + "\t");
             }
             System.out.println("\\\\\\hline");
         }
@@ -35,7 +33,7 @@ public class Main {
         return Math.pow(n,2);
     }
 
-    public static float calcE(double ts, double tp, int p) {
+    public static float calcEfficiency(double ts, double tp, int p) {
         return (float)(ts/(tp*p));
     }
 
