@@ -5,7 +5,7 @@ public class Main {
         int iterations[] = {10, 20, 40, 80, 160, 320};
         int processes[] = {1, 2, 4, 8, 16, 32, 64, 128};
         System.out.println("\\hline");
-
+        System.out.println("$p\\backslash n$ & 10 & 20 & 40 & 80 & 160 & 320 \\\\\\hline");
         for (int p: processes) {
             System.out.print(p + "\t");
             for (int n : iterations) {
@@ -16,6 +16,7 @@ public class Main {
         }
 
         System.out.println("\\hline");
+        System.out.println("$p\\backslash n$ & 10 & 20 & 40 & 80 & 160 & 320 \\\\\\hline");
         for (int p: processes) {
             System.out.print(p + "\t");
             for (int n: iterations) {
