@@ -19,7 +19,7 @@ public class Main {
             System.out.print(p + "\t");
             for (int n: iterations) {
                 double ts = calcTS(n); double tp = calcTP(n,p);
-                System.out.print("& " + calcEfficiency(ts,tp, n) + "\t");
+                System.out.print("& " + calcEfficiency(ts,tp, p) + "\t");
             }
             System.out.println("\\\\\\hline");
         }
